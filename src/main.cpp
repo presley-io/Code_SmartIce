@@ -11,27 +11,27 @@
  * more for a premium and profitable machine.
 ***/
 
-#include <Arduino.h>
-#include <motor_class.h>
-#include <Adafruit_LPS35HW.h>
-#include <DallasTemperature.h>
-#include <OneWire.h>
-#include <STM32FreeRTOS.h>
-#include <task_list.h>
+#include <Arduino.h>           // Our coding Bible
+#include <motor_class.h>       // Our pump driver
+#include <Adafruit_LPS35HW.h>  // For the I2C Temperature and pressure probe
+#include <DallasTemperature.h> // For the ADC Temperature Probe
+#include <OneWire.h>           // For ADC sensors
+#include <STM32FreeRTOS.h>     // Header for RTOS system
+#include <task_list.h>         // Works with RTOS system
 #include "taskshare.h"         // Header for inter-task shared data
 #include "taskqueue.h"         // Header for inter-task data queues
 #include "shares.h"            // Header for shares used in this project
 #include <PrintStream.h>
 
 // define global shares
-Share<float> bath_temp_s("bath temp");
-Share<float> sleeve_temp_s("sleeve temp");
-Share<float> sleeve_pressure_s("sleeve pressure");
-Share<float> pump_speed("pump speed setting");
+Share<float> bath_temp_s("bath temp"); /// Share for most recent bath temperature
+Share<float> sleeve_temp_s("sleeve temp"); /// Share for most recent sleeve temperature
+Share<float> sleeve_pressure_s("sleeve pressure"); /// Share for most recent sleeve pressure
+Share<float> pump_speed("pump speed setting"); /// Share for most recently requested pump speed
 
 /** @brief   Arduino setup function which runs once at program startup.
  *  @details This function sets up a serial port for communication and creates
- *           the tasks which will be run.
+ *           the tasks which will be run. This is using the RTOS system.
  */
 void setup () 
 {
@@ -73,6 +73,9 @@ void setup ()
     vTaskStartScheduler ();
 }
 
+/**
+ * @brief Loop function is unused in RTOS code.
+ */
 void loop() {
 // nothing here for RTOS code!
 }

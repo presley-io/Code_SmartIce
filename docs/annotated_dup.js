@@ -1,4 +1,5 @@
 var annotated_dup =
 [
-    [ "pumpDriver", "classpumpDriver.html", "classpumpDriver" ]
+    [ "pumpDriver", "classpumpDriver.html", "classpumpDriver" ],
+    [ "StatTracker", "classStatTracker.html", "classStatTracker" ]
 ];

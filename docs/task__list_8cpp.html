@@ -109,23 +109,118 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a60ad5245956c347d97895ac737bb9b12"><td class="memItemLeft" align="right" valign="top"><a id="a60ad5245956c347d97895ac737bb9b12" name="a60ad5245956c347d97895ac737bb9b12"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>task_bathsensor</b> (void *p_params)</td></tr>
+<tr class="memitem:a60ad5245956c347d97895ac737bb9b12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__list_8cpp.html#a60ad5245956c347d97895ac737bb9b12">task_bathsensor</a> (void *p_params)</td></tr>
+<tr class="memdesc:a60ad5245956c347d97895ac737bb9b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bath Temperature Sensor Task.  <a href="task__list_8cpp.html#a60ad5245956c347d97895ac737bb9b12">More...</a><br /></td></tr>
 <tr class="separator:a60ad5245956c347d97895ac737bb9b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9cacf96020303bfda559734578b654d"><td class="memItemLeft" align="right" valign="top"><a id="ad9cacf96020303bfda559734578b654d" name="ad9cacf96020303bfda559734578b654d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>task_sleevesensor</b> (void *p_params)</td></tr>
+<tr class="memitem:ad9cacf96020303bfda559734578b654d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__list_8cpp.html#ad9cacf96020303bfda559734578b654d">task_sleevesensor</a> (void *p_params)</td></tr>
+<tr class="memdesc:ad9cacf96020303bfda559734578b654d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sleeve Sensor Task.  <a href="task__list_8cpp.html#ad9cacf96020303bfda559734578b654d">More...</a><br /></td></tr>
 <tr class="separator:ad9cacf96020303bfda559734578b654d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac467af9c74872cf74aa6c69efd154b0"><td class="memItemLeft" align="right" valign="top"><a id="aac467af9c74872cf74aa6c69efd154b0" name="aac467af9c74872cf74aa6c69efd154b0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>task_overallcontroller</b> (void *p_params)</td></tr>
+<tr class="memitem:aac467af9c74872cf74aa6c69efd154b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__list_8cpp.html#aac467af9c74872cf74aa6c69efd154b0">task_overallcontroller</a> (void *p_params)</td></tr>
+<tr class="memdesc:aac467af9c74872cf74aa6c69efd154b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overal Controller Task.  <a href="task__list_8cpp.html#aac467af9c74872cf74aa6c69efd154b0">More...</a><br /></td></tr>
 <tr class="separator:aac467af9c74872cf74aa6c69efd154b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a7b9455d11c055fa22a62e2f627084d"><td class="memItemLeft" align="right" valign="top"><a id="a0a7b9455d11c055fa22a62e2f627084d" name="a0a7b9455d11c055fa22a62e2f627084d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>task_pumpcontroller</b> (void *p_params)</td></tr>
+<tr class="memitem:a0a7b9455d11c055fa22a62e2f627084d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__list_8cpp.html#a0a7b9455d11c055fa22a62e2f627084d">task_pumpcontroller</a> (void *p_params)</td></tr>
+<tr class="memdesc:a0a7b9455d11c055fa22a62e2f627084d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pump controller task (optional)  <a href="task__list_8cpp.html#a0a7b9455d11c055fa22a62e2f627084d">More...</a><br /></td></tr>
 <tr class="separator:a0a7b9455d11c055fa22a62e2f627084d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Source code containing all tasks definitions. </p>
 <p >Sets up tasks for RTOS and defines their specfic properties. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a60ad5245956c347d97895ac737bb9b12" name="a60ad5245956c347d97895ac737bb9b12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ad5245956c347d97895ac737bb9b12">&#9670;&nbsp;</a></span>task_bathsensor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void task_bathsensor </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p_params</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bath Temperature Sensor Task. </p>
+<p >This is the task for the bath temperature sensor. State 0 is initialization, which occurs when the task is first created. State 1 is what runs forever in the for(;;) loop. Since there are only 2 states including initialization, the states were not necessary to define. <br  />
+ <br  />
+ This task uses the ADC temperature probe class constructed by the manufacturer of this product. </p>
+
+</div>
+</div>
+<a id="aac467af9c74872cf74aa6c69efd154b0" name="aac467af9c74872cf74aa6c69efd154b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac467af9c74872cf74aa6c69efd154b0">&#9670;&nbsp;</a></span>task_overallcontroller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void task_overallcontroller </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p_params</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overal Controller Task. </p>
+<p >This is the task for the system controller. This controller employs a PID controller, with only a P gain. State 0 is initialization, which occurs when the task is first created &ndash; this defines the controller values as well as initializes the pump objected, which yes belongs to this task. State 1 is what runs forever in the for(;;) loop (besides the if statement that detects a pop). State 2 occurs if a pop is detected. </p>
+<p >[C], PID error &ndash; difference between desired and measured.</p>
+<p >[C], desired temperature at arm</p>
+<p >[C], Maximum temp of bath; indicates that water/ice needs to be replenished</p>
+<p >[motor_PWM / C], proportional gain of the PID controller.</p>
+<p >[kPa], recording of last presure.</p>
+<p >[%], percentage pressure drop tolerance. If exceeded, will trigger shutdown.</p>
+
+</div>
+</div>
+<a id="a0a7b9455d11c055fa22a62e2f627084d" name="a0a7b9455d11c055fa22a62e2f627084d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a7b9455d11c055fa22a62e2f627084d">&#9670;&nbsp;</a></span>task_pumpcontroller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void task_pumpcontroller </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p_params</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pump controller task (optional) </p>
+<p >This was removed from the task because it felt unnecessary. The pump can be controlled from the main controller in 1 line of code, so coding this entire task felt unncessary. </p>
+
+</div>
+</div>
+<a id="ad9cacf96020303bfda559734578b654d" name="ad9cacf96020303bfda559734578b654d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9cacf96020303bfda559734578b654d">&#9670;&nbsp;</a></span>task_sleevesensor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void task_sleevesensor </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p_params</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sleeve Sensor Task. </p>
+<p >This is the task for the sleeve temperature and pressure sensor. State 0 is initialization, which occurs when the task is first created. State 1 is what runs forever in the for(;;) loop. Since there are only 2 states including initialization, the states were not necessary to define. <br  />
+ <br  />
+ This task uses the I2C temperature probe class constructed by the manufacturer of this product. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
